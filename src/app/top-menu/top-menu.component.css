@@ -1,0 +1,15 @@
+.navbar{
+  background: rgb(181,214,146);
+  height: 50px;
+  width: 100%;
+  margin: 0 0 0 0;
+  position: static-top;
+  top: 0;
+}
+
+.navbar-name{
+  color: #FFFFFF;
+}
+
+.navbar-search{
+}
