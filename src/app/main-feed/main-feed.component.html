@@ -2,10 +2,10 @@
   <ul class="articles-page">
     <li *ngFor="let article of articles">
       <label class="article-label">
-        <a class="article-link" routerLink="/articles/{{article.id}}">
+        <div class="article-box">
           <div class="article-title">{{article.title}}</div>
-          <div class="article-brief-content">{{article.content}}</div>
-        </a>
+          <div class="article-brief-content">{{briefContent(article.content)}}</div>
+        </div>
       </label>
     </li>
   </ul>

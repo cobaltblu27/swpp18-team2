@@ -1,0 +1,37 @@
+#mainfeed{
+
+}
+.articles-page{
+  width: 60%;
+  min-width: 650px;
+  float: middle;
+  padding: 2.5em;
+  list-style: none;
+}
+.article-box{
+  border: solid;
+  border-width: 1px;
+  border-color: #B1AAAD;
+  background: #FFFFFF;
+  font-family: Arial;
+  padding: 0.4em 0.2em 0.4em 0.4em;
+  border-radius: 2px;
+  margin-bottom: 12px;
+  list-style: none;
+}
+.article-title{
+  font-family: "Times New Roman", Times, serif;
+  border-bottom: dashed;
+  border-color: #547980;
+  border-width: 2px;
+  width: 60%;
+  min-width: 600px;
+  font-size: 20px;
+  font: serif;
+}
+.article-brief-content{
+  list-style: none;
+}
+li {
+
+}

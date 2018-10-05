@@ -26,14 +26,14 @@ a, a:hover, a:focus {
 
 #sidebar {
     /* don't forget to add all the previously mentioned styles here too */
-    background: #98307F;
+    background: #F26B38;
     color: #fff;
     transition: all 0.3s;
 }
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #820263;
+    background: #EC2049;
 }
 
 #sidebar ul.components {
@@ -58,7 +58,7 @@ a, a:hover, a:focus {
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
-    background: #820263;
+    background: #F26B38;
 }
 ul ul a {
     font-size: 0.9em !important;

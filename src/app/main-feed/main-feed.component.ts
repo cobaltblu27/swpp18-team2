@@ -10,6 +10,7 @@ import { Article } from '../article'
 export class MainFeedComponent implements OnInit {
 
   articles: Article[]
+  SHOW_CONTENT_LENGTH : number = 200
 
   constructor(
     private dbService: DatabaseService
@@ -24,8 +25,9 @@ export class MainFeedComponent implements OnInit {
     .then(articles => this.articles = articles)
   }
 
-  breifContent(str: string) : string {
-    return (str.length > 50) ? str.substr(0,50) : str
+  briefContent(str: string) : string {
+    return (str.length >= this.SHOW_CONTENT_LENGTH) ? 
+    str.substr(0,this.SHOW_CONTENT_LENGTH-4)+'...' : str
   }
 
 }
