@@ -2,6 +2,11 @@ import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { Observable } from 'rxjs';
 
+/****
+* AuthGuard: class for providing CanActivate
+* This will be used in routing module for security
+****/
+
 @Injectable({
   providedIn: 'root'
 })

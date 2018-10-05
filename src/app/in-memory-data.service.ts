@@ -1,6 +1,10 @@
 import { Injectable } from '@angular/core'
 import { InMemoryDbService } from 'angular-in-memory-web-api'
 
+/******
+* InMeMoryDataService: mock-backend database for temporary use. initially copied 
+* from hw2.
+******/
 @Injectable()
 export class InMemoryDataService implements InMemoryDbService {
 

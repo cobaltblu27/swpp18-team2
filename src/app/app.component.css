@@ -12,3 +12,7 @@
     background-color: black;
     height: 100%;
 }
+
+#navbar-spacer {
+    padding-top: 50px;
+}

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
+import { DatabaseService } from '../database.service'
+import { Article } from '../article'
 
 @Component({
   selector: 'app-main-feed',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainFeedComponent implements OnInit {
 
-  constructor() { }
+  articles: Article[]
+
+  constructor(
+    private dbService: DatabaseService
+    ) { }
 
   ngOnInit() {
+    this.getArticle()
+  }
+
+  getArticle(): void {
+    this.dbService.getArticles()
+    .then(articles => this.articles = articles)
+  }
+
+  breifContent(str: string) : string {
+    return (str.length > 50) ? str.substr(0,50) : str
   }
 
 }
