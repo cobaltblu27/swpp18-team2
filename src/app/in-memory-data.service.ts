@@ -51,6 +51,12 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 2, email: 'alan@turing.com', password: 'iluvswpp', name: 'Alan Turing', signed_in: false},
       { id: 3, email: 'edsger@dijkstra.com', password: 'iluvswpp', name: 'Edsger Dijkstra', signed_in: false}
     ]   
-    return {articles, comments, user};
+    const interests = [
+      { id: 1, name: 'SWPP'},
+      { id: 2, name: 'Basketball'},
+      { id: 3, name: 'Hearthstone'},
+      { id: 4, name: 'HoS'}
+    ]
+    return {articles, comments, user, interests};
   }
 }

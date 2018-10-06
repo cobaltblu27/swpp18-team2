@@ -13,7 +13,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
-import { InterestComponent } from './interest/interest.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +20,6 @@ import { InterestComponent } from './interest/interest.component';
     SidebarComponent,
     MainFeedComponent,
     MessageComponent,
-    InterestComponent
   ],
   imports: [
     BrowserModule,
