@@ -10,7 +10,8 @@
 }
 .article-box{
   border: solid;
-  border-width: 1px;
+  border-width: 0px;
+  box-shadow: 2px 2px 8px #888888;
   border-color: #B1AAAD;
   background: #FFFFFF;
   font-family: Arial;
@@ -21,9 +22,9 @@
 }
 .article-title{
   font-family: "Times New Roman", Times, serif;
-  border-bottom: dashed;
+  border-bottom: solid;
   border-color: #547980;
-  border-width: 2px;
+  border-width: 1px;
   width: 60%;
   min-width: 600px;
   font-size: 20px;
